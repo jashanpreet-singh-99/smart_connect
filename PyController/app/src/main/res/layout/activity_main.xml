@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_color_gradient"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Change Mode"
+        android:background="@drawable/rounded_corner_btn"
+        android:backgroundTint="#66ffffff"
+        android:layout_margin="10dp"
+        android:id="@+id/mode_changer"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mode_changer"
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:id="@+id/reply_section"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/voice_mode"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_voice"
+            android:background="@drawable/rounded_btn"
+            android:backgroundTint="#88ffffff"
+            android:id="@+id/voice_record"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:id="@+id/recorded_viewer"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:id="@+id/text_mode">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#dddddd"
+            android:hint="Commands Here"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_btn"
+            android:backgroundTint="#33ffffff"
+            android:id="@+id/command_txt"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="1dp"
+                android:layout_gravity="center"
+                android:text="Go"
+                android:textColor="#666666"
+                android:background="@drawable/rounded_btn"
+                android:backgroundTint="#ffffff"
+                android:id="@+id/command_set"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#cccccc"
+            android:hint="IP Address of Server"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_btn"
+            android:backgroundTint="#33ffffff"
+            android:id="@+id/ip_add_txt"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="1dp"
+                android:layout_gravity="center"
+                android:text="Ok"
+                android:textColor="#666666"
+                android:background="@drawable/rounded_btn"
+                android:backgroundTint="#ffffff"
+                android:id="@+id/ip_change"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+,Exp,Word,Func,Args,Args_exp,F_type,W_len
+0,JJ,open,0,1,"NN,CD,NNP",file,4
+1,VB,go,1,0,_,file,2
+2,RB,back,1,0,_,file,4
+3,NN,wakeup,2,0,-,system,6
+4,VB,wake,2,0,-,system,4
+5,RP,up,2,0,-,system,2
+6,NN,online,2,0,-,system,6
+7,NN,shutdown,3,0,-,system,8
+8,NN,sleep,3,0,-,system,5
+9,NN,switch,4,1,"VB,VBG",system,6
